@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23C3BE952036FD0800DF2E44 /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C3BE942036FD0800DF2E44 /* CircleButton.swift */; };
+		23C3BE9720370D7B00DF2E44 /* test.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 23C3BE9620370D7A00DF2E44 /* test.m4a */; };
+		23C3BE9A2037171600DF2E44 /* Test2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 23C3BE992037171600DF2E44 /* Test2.m4a */; };
 		23F15B432036F226008C0960 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F15B422036F226008C0960 /* AppDelegate.swift */; };
 		23F15B452036F226008C0960 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F15B442036F226008C0960 /* ViewController.swift */; };
 		23F15B482036F226008C0960 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23F15B462036F226008C0960 /* Main.storyboard */; };
@@ -15,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		23C3BE942036FD0800DF2E44 /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
+		23C3BE9620370D7A00DF2E44 /* test.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.m4a; sourceTree = "<group>"; };
+		23C3BE992037171600DF2E44 /* Test2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Test2.m4a; sourceTree = "<group>"; };
 		23F15B3F2036F226008C0960 /* MurmurApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MurmurApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23F15B422036F226008C0960 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23F15B442036F226008C0960 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +41,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		23C3BE912036FC5900DF2E44 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		23C3BE922036FC6100DF2E44 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				23C3BE942036FD0800DF2E44 /* CircleButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		23C3BE932036FC6C00DF2E44 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				23F15B442036F226008C0960 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		23C3BE9820370D8600DF2E44 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				23C3BE992037171600DF2E44 /* Test2.m4a */,
+				23C3BE9620370D7A00DF2E44 /* test.m4a */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		23F15B362036F226008C0960 = {
 			isa = PBXGroup;
 			children = (
@@ -54,8 +92,11 @@
 		23F15B412036F226008C0960 /* MurmurApp */ = {
 			isa = PBXGroup;
 			children = (
+				23C3BE9820370D8600DF2E44 /* Resources */,
+				23C3BE912036FC5900DF2E44 /* Model */,
+				23C3BE922036FC6100DF2E44 /* View */,
+				23C3BE932036FC6C00DF2E44 /* Controller */,
 				23F15B422036F226008C0960 /* AppDelegate.swift */,
-				23F15B442036F226008C0960 /* ViewController.swift */,
 				23F15B462036F226008C0960 /* Main.storyboard */,
 				23F15B492036F226008C0960 /* Assets.xcassets */,
 				23F15B4B2036F226008C0960 /* LaunchScreen.storyboard */,
@@ -123,6 +164,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23C3BE9720370D7B00DF2E44 /* test.m4a in Resources */,
+				23C3BE9A2037171600DF2E44 /* Test2.m4a in Resources */,
 				23F15B4D2036F226008C0960 /* LaunchScreen.storyboard in Resources */,
 				23F15B4A2036F226008C0960 /* Assets.xcassets in Resources */,
 				23F15B482036F226008C0960 /* Main.storyboard in Resources */,
@@ -136,6 +179,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23C3BE952036FD0800DF2E44 /* CircleButton.swift in Sources */,
 				23F15B452036F226008C0960 /* ViewController.swift in Sources */,
 				23F15B432036F226008C0960 /* AppDelegate.swift in Sources */,
 			);

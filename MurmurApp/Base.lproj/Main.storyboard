@@ -1,24 +1,134 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-UltraLight</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MurmurApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.94999999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="siri" translatesAutoresizingMaskIntoConstraints="NO" id="KP4-d0-JDJ">
+                                <rect key="frame" x="0.0" y="491" width="414" height="245"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="245" id="lIq-qA-gOx"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A52-Kj-7kH">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MurmurApp" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bIM-wc-gaX">
+                                        <rect key="frame" x="120.66666666666669" y="37" width="173" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="5b2-XL-MiS"/>
+                                            <constraint firstAttribute="width" constant="173" id="GzC-bW-Zau"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="19"/>
+                                        <color key="textColor" red="0.9959825873374939" green="0.99621325731277466" blue="0.99187678098678589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.098039215690000001" green="0.098039215690000001" blue="0.1019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="bIM-wc-gaX" firstAttribute="centerX" secondItem="A52-Kj-7kH" secondAttribute="centerX" id="UfH-7M-rBe"/>
+                                    <constraint firstAttribute="height" constant="80" id="qPX-Cx-keE"/>
+                                    <constraint firstAttribute="bottom" secondItem="bIM-wc-gaX" secondAttribute="bottom" constant="8" id="uQy-bL-pO0"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nQv-1W-Ey2" customClass="CircleButton" customModule="MurmurApp" customModuleProvider="target">
+                                <rect key="frame" x="177" y="491" width="60" height="60"/>
+                                <color key="backgroundColor" red="0.098039215690000001" green="0.098039215690000001" blue="0.1019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="FJk-T4-6fT"/>
+                                    <constraint firstAttribute="width" constant="60" id="iVM-nZ-U6I"/>
+                                </constraints>
+                                <state key="normal" image="micButtonImage copy"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadious">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="playButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pam-EG-Q7N"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Play &amp; Transcribe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="roR-n5-Hac">
+                                <rect key="frame" x="120.66666666666669" y="559" width="173" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="KXd-Ds-rRi"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="OUo-lc-9hR"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="173" id="slw-yr-kqp"/>
+                                    <constraint firstAttribute="width" constant="173" id="uWD-kf-whq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="19"/>
+                                <color key="textColor" red="0.9959825873" green="0.99621325729999999" blue="0.99187678099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Tap the button below to transcribe the audio embedded it this app." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="aO2-he-lfl">
+                                <rect key="frame" x="20" y="100" width="374" height="371"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" red="0.9959825873374939" green="0.99621325731277466" blue="0.99187678098678589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardAppearance="alert"/>
+                            </textView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="SzD-Hf-hCI">
+                                <rect key="frame" x="177.66666666666666" y="491.66666666666674" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="FzR-pW-uZQ"/>
+                                    <constraint firstAttribute="width" constant="60" id="vsu-rf-hyW"/>
+                                </constraints>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.067368797957897186" green="0.035368580371141434" blue="0.022601157426834106" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="A52-Kj-7kH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="8yS-4A-eW9"/>
+                            <constraint firstItem="KP4-d0-JDJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="AGA-fc-4kb"/>
+                            <constraint firstItem="roR-n5-Hac" firstAttribute="top" secondItem="nQv-1W-Ey2" secondAttribute="bottom" constant="8" id="B1i-bT-zWT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nQv-1W-Ey2" secondAttribute="bottom" constant="185" id="Cbg-mo-go6"/>
+                            <constraint firstItem="SzD-Hf-hCI" firstAttribute="centerX" secondItem="nQv-1W-Ey2" secondAttribute="centerX" id="HDE-zY-dmC"/>
+                            <constraint firstItem="KP4-d0-JDJ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="JPb-Op-rV9"/>
+                            <constraint firstAttribute="bottom" secondItem="bIM-wc-gaX" secondAttribute="bottom" constant="664" id="Mwx-GO-lMV"/>
+                            <constraint firstItem="bIM-wc-gaX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="P88-aT-yDL"/>
+                            <constraint firstItem="nQv-1W-Ey2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Pvt-Xr-xBe"/>
+                            <constraint firstItem="aO2-he-lfl" firstAttribute="top" secondItem="A52-Kj-7kH" secondAttribute="bottom" constant="20" id="S0j-0a-ruc"/>
+                            <constraint firstItem="KP4-d0-JDJ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="g5Q-Ss-ELu"/>
+                            <constraint firstItem="A52-Kj-7kH" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="hYN-qK-dfR"/>
+                            <constraint firstItem="SzD-Hf-hCI" firstAttribute="centerY" secondItem="nQv-1W-Ey2" secondAttribute="centerY" id="iQg-93-dFv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aO2-he-lfl" secondAttribute="trailing" constant="20" id="oWl-58-nXf"/>
+                            <constraint firstItem="aO2-he-lfl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="pNA-7N-fLQ"/>
+                            <constraint firstItem="roR-n5-Hac" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sqd-ec-ulx"/>
+                            <constraint firstItem="KP4-d0-JDJ" firstAttribute="top" secondItem="aO2-he-lfl" secondAttribute="bottom" constant="20" id="vcU-uI-dyN"/>
+                            <constraint firstItem="A52-Kj-7kH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zpw-aK-hJn"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="activitySpinner" destination="SzD-Hf-hCI" id="rhO-fK-5dp"/>
+                        <outlet property="transcriptionTextField" destination="aO2-he-lfl" id="bGu-gL-J1e"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="135" y="132.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="micButtonImage copy" width="720" height="720"/>
+        <image name="siri" width="1200" height="962"/>
+    </resources>
 </document>
